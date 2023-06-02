@@ -14,12 +14,22 @@ namespace Methods
             SayHi("John", 29);
             SayHi("Duke", 31);
 
+            int cubedNumber = Cube(5);
+            Console.WriteLine(cubedNumber);
+
+
             Console.ReadLine();
         }
 
         static void SayHi(string name, int age)
         {
             Console.WriteLine(name + " is " + age + " years old");
+        }
+
+        static int Cube(int num)
+        {
+            int result = num * num * num;
+            return result;
         }
     }
 }
