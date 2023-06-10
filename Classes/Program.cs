@@ -19,12 +19,15 @@ namespace Classes
             Console.WriteLine(book1.author);
 
             Student student1 = new Student("Mathew Murimi", "English Lit", 22, 2);
+            Console.WriteLine(Student.studentCount);
             Student student2 = new Student("Mike North", "Art", 12, 4);
+            Console.WriteLine(Student.studentCount);
 
             Console.WriteLine(student1.name);
             Console.WriteLine(student1.Year);
             Console.WriteLine(student1.Minor());
             Console.WriteLine(student2.Minor());
+            Console.WriteLine(student1.StudentCount);
 
 
             Console.ReadLine();

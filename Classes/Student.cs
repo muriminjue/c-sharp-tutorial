@@ -12,7 +12,7 @@ namespace Classes
         public string course;
         public int age;
         private int year;
-
+        public static int studentCount;
         // Constructor
         public Student(string aName, string aCourse, int aAge, int aYear)
         {
@@ -20,6 +20,7 @@ namespace Classes
             course = aCourse;
             age = aAge;
             Year = aYear;
+            studentCount++;
         }
 
         public int Year
@@ -40,6 +41,11 @@ namespace Classes
         {
             if(age >=18) { return true; }
             return false;
+        }
+
+        public int StudentCount
+        {
+            get { return studentCount; }
         }
     }
 
