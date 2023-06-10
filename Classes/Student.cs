@@ -11,7 +11,7 @@ namespace Classes
         public string name;
         public string course;
         public int age;
-        public int year;
+        private int year;
 
         // Constructor
         public Student(string aName, string aCourse, int aAge, int aYear)
@@ -19,7 +19,22 @@ namespace Classes
             name = aName;
             course = aCourse;
             age = aAge;
-            year = aYear;
+            Year = aYear;
+        }
+
+        public int Year
+        {
+            get { return year; }
+            set { 
+                if (value > 0 && value < 7)
+                {
+                    year = value;
+                }
+                else
+                {
+                    year = 0;
+                } 
+            }
         }
     }
 
