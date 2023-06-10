@@ -18,6 +18,11 @@ namespace Classes
 
             Console.WriteLine(book1.author);
 
+            Student student1 = new Student("Mathew Murimi", "English Lit", 22, 2);
+
+            Console.WriteLine(student1.name);
+            Console.WriteLine(student1.year);
+
             Console.ReadLine();
         }
     }
